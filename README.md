@@ -1,6 +1,6 @@
 **Instrucciones**
 
-Proyecto creado con handelbars, css, boostrap, javascript.
+Proyecto creado con handlebars, css, boostrap, javascript.
 
 Creacion de un proyecto web acerca de un concurso de skaters, registro en una base de datos, login y muestra de los usuarios en la base de datos. 
 
