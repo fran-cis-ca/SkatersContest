@@ -1,5 +1,9 @@
 **Instrucciones**
 
+Proyecto creado con handelbars, css, boostrap, javascript.
+
+Creacion de un proyecto web acerca de un concurso de skaters, registro en una base de datos, login y muestra de los usuarios en la base de datos. 
+
 Los datos para la conexion a la base de datos vienen de el
 archivo .env, ademas tambien de ese archivo se saca la clave secreta, el tiempo de expiracion del jwt y el tiempo de expiracion de la cookie. En este caso se subio el archivo .env ya que solo tiene datos de ejemplo.
 
