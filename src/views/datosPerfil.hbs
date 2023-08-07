@@ -1,0 +1,61 @@
+ <link rel="stylesheet" href="./css/stylePerfilDatos.css">
+ 
+<div= class="container-form">
+    
+    <form action="" method="post"></form>
+    <h2>Datos de perfil</h2>
+    <div>
+
+{{#if administrador}}        
+    <h6>Bienvenido Administrador:
+        <h6>{{user}}</h6>
+    </h6>
+    <a href="/listar" class="btn btn-success butonCerrar">Listado de skaters</a>
+{{else}}
+    <h6>Bienvenido skater:
+        <h6>{{user}}</h6>
+    </h6>
+{{/if}}    
+
+<a type="button" href="logout" class="btn btn-danger butonCerrar">Cerrar sesion</a>
+
+</div>
+    <div class="content">
+        <div class="input-box">
+            <label for="email">Email</label>
+            <input type="email" value="{{email}}" readonly>
+        </div>
+         <div class="input-box">
+            <label for="name">Nombre</label>
+            <input  type="text" name="nombre" value="{{user}}" id="InputNombreDatosPerfil">
+        </div>
+         <div class="input-box">
+            <label for="password">Contraseña</label>
+            <input type="password" value="{{contrasena}}" >
+        </div>
+         <div class="input-box">
+            <label for="confirm-password">Nueva contraseña</label>
+            <input type="text" id="nuevaContrasena" >
+        </div>
+         <div class="input-box">
+            <label for="experience">Años de experiencia</label>
+            <input type="number" value="{{anios_experiencia}}" id="anios_exp" >
+        </div>
+        <div class="input-box">
+            <label for="specialty">Especialidad</label>
+            <input type="text" value="{{especialidad}}" id="especialidad" >
+        </div>
+
+        <div class="button-container">
+        <button id="actualizarDatos" onclick="editaPerfil({{id}})">Actualizar</button>
+        <button onclick="eliminaPerfil({{id}})">Eliminar Cuenta</button>
+        </div>
+        <script defer src="./js/indexDatosPerfil.js"></script>
+</div>
+
+
+
+
+
+
+{{> footer}}

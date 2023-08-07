@@ -1,0 +1,49 @@
+{{> header}}
+<div class="container">
+  <h1 class="mt-5 text-center">Inicio sesión</h1>
+  <form id="login_form" action="/login" method="post">
+    <div class="mb-3">
+      <label class="form-label">Nombre</label>
+      <input
+        type="text"
+        class="form-control"
+        name="nombre"
+        
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        name="email"
+        value="example@gmail.com"
+       
+      />
+    <div class="mb-3">
+      <label  class="form-label">Password</label>
+      <input type="password" class="form-control" name="contrasena" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+   {{#if alert  }}
+    <script>
+      
+      Swal.fire({
+        title: '{{alertTitle}}',
+        text:  '{{alertMessage}}',
+        icon: '{{alertIcon}}',
+        showConfirmButton:  {{showConfirmButton}},
+        timer: {{timer}} 
+      }).then(()=>{
+        window.location = '/' + '{{ruta}}'
+      })
+
+    </script>
+  {{/if }}
+
+{{> footer}}

@@ -1,0 +1,116 @@
+body {
+  background: url("/img/skate.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.titulo {
+  color: aliceblue;
+  font-weight: bold;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Agregar transparencia al fondo */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+  backdrop-filter: blur(15px);
+}
+.tituloaInicio {
+  text-decoration: none;
+  color: inherit;
+}
+
+/** Estilo para el footer de la pagina*/
+.footers {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.pfooter{
+    -webkit-text-stroke: 1.4px black;
+}
+
+.imgGIcon {
+  width: 90px;
+  height: 90px;
+}
+
+/**Estilo de datosPerfil*/
+
+
+/**Estilo inicio pagina*/
+
+.boton{
+    background-color: rgb(168, 179, 163);
+}
+
+.InicioPagina { 
+  text-align: center;
+}
+.headers{
+  background-color: #F00;
+  text-align: center;
+}
+
+.comp{
+    background-color: rgb(168, 179, 163);
+    border-radius: 100px;
+  
+    animation: myAnim 10s ease 0s infinite normal forwards;
+    -webkit-box-shadow: 12px 12px 11px 0px rgba(0,0,0,0.7); 
+    color: #FFF;
+    box-shadow: 12px 12px 11px 0px rgba(0,0,0,0.7);
+    text-shadow: 0 -1px 4px #b5b3b3, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+
+.muni{
+    -webkit-text-stroke: 1.5px black;
+    animation: myAnim2 5s ease 5s 2 normal forwards;
+}
+
+@keyframes myAnim2 {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
+}

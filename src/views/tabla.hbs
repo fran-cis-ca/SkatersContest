@@ -1,0 +1,53 @@
+
+<link rel="stylesheet" href="./css/styleTabla.css">
+<main class="table">
+    <section class="table__header">
+<h6>Bienvenido: 
+    {{#if user}}
+    <h6 class="blanco">{{user}}</h6>
+    {{/if}} 
+</h6>
+
+<a type="button" href="logout" class="btn btn-danger">Cerrar sesion</a>
+        <h3>Administracion de registros</h3>
+        <div class="input-group">
+            <input type="search" placeholder="Search Data...">
+            <img src="./img/pngegg (1).png" alt="">
+        </div>
+    
+    </section>
+    <section class="table__body">
+        <table>
+            <thead>
+                <tr>
+                    <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Foto <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Nombre <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Años de experiencia <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Especialidad <span class="icon-arrow">&UpArrow;</span></th>
+                    <th> Estado <span class="icon-arrow">&UpArrow;</span></th>
+                </tr>
+            </thead>
+            <br>
+            <tbody id="cuerpo">
+                {{#each registros}}
+                <tr>
+                    
+                    <td>{{id}}</td>
+                   <td> <img src="./uploads/{{foto}}">{{foto}}</img></td>
+                    <td>{{nombre}}</td>
+                    <td>{{anos_experiencia}}</td>
+                    <td>{{especialidad}}</td>
+                    <td>{{estado}}</td>
+                    
+                </tr>
+                {{/each}}  
+                    
+                 
+
+            </tbody>
+        </table>
+    </section>
+    
+    {{> footer}}
+</main>
